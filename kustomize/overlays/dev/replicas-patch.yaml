@@ -4,4 +4,4 @@ metadata:
   name: grade-submission-api
   namespace: grade-demo 
 spec:
-  replicas: 1
+  replicas: 5

@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: grade-submission-api
-        image: rslim087/kubernetes-course-grade-submission-api:stateless
+        image: rslim087/kubernetes-course-grade-submission-api:stateless-v4
         ports:
           - containerPort: 3000

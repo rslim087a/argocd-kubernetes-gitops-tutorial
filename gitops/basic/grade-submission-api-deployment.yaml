@@ -6,7 +6,7 @@ metadata:
   labels:
     app: grade-submission
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: grade-submission
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: grade-submission-api
-        image: rslim087/kubernetes-course-grade-submission-api:stateless
+        image: rslim087/kubernetes-course-grade-submission-api:stateless-v4
         ports:
           - containerPort: 3000

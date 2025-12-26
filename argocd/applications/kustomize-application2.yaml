@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: grade-submission
+  name: grade-submission-prod
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/Kundan547/argocd-kubernetes-gitops-tutorial.git
     targetRevision: HEAD
-    path: gitops/basic
+    path: kustomize/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: grade-demo
