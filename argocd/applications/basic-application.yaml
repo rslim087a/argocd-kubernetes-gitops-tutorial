@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/rslim087a/argocd-kubernetes-gitops-tutorial.git
+    repoURL: https://github.com/avatala/argocd-kubernetes-gitops-tutorial
     targetRevision: HEAD
     path: gitops/basic
   destination:
